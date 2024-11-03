@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupons de Recompensa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cupons de Recompensa</h1>
+        <p id="saldo">Saldo: R$ 0,00</p>
+
+        <h3>Cupom Atual:</h3>
+        <p id="cupom-atual"></p>
+
+        <label for="cupom">Digite o código do cupom:</label>
+        <input type="text" id="cupom" placeholder="Ex: ABC123">
+
+        <button onclick="verificarCupom()">Resgatar</button>
+
+        <button id="saque-btn" onclick="sacar()" disabled>Sacar R$1000</button> <!-- Botão de saque -->
+        
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
